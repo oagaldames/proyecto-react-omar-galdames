@@ -1,13 +1,30 @@
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+import ProductCard from "../../common/productCard/ProductCard";
+import { Typography, Box } from "@mui/material";
 
-const ItemList = ({ mensaje }) => {
+const ItemList = ({ items, pageTitle }) => {
+  console.log("titulo de pagina", pageTitle);
   return (
-    <Box display="flex" justifyContent="center" paddingTop={10}>
-      <Typography variant="h2" component="div">
-        {mensaje}
+    <section>
+      <Typography variant="h3" align="center">
+        {pageTitle}
       </Typography>
-    </Box>
+      <Box
+        width="100%"
+        display="flex"
+        justifyContent="space-evenly"
+        flexWrap="wrap"
+        paddingTop={2}
+        gap={2}
+      >
+        {items.map((item) => (
+          <ProductCard
+            key={item.id}
+            item={item}
+            style={{ flexBasis: "calc(33.33% - 20px)" }}
+          />
+        ))}
+      </Box>
+    </section>
   );
 };
 
