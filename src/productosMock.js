@@ -5,9 +5,9 @@ export const products = [
     price: 15000,
     stock: 4,
     description:
-      "Sensores Inductivos ñlkdñalskdñalksdñlaks ldjasdjlasjdlas jaskdjalsjdlasjd aksdkañskdñalsa aksdñkasñdlksañdl",
+      "Los sensores de proximidad inducti­vos proporcionan soluciones inte­ligentes y completas en una amplia gama de tareas de automatización industrial. Pueden, por ejemplo, detectar objetos metálicos dentro de campos electromagnéticos al­ternos de alta frecuencia sin ningún tipo de contacto. Sus iniciadores sin mantenimiento ni desgaste no contienen partes móviles los hace más duraderos y fiables",
     category: "sensores",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png",
+    img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689024003/SensorInductivo_q7ehxk.webp",
   },
   {
     id: 2,
@@ -15,9 +15,9 @@ export const products = [
     price: 14500,
     stock: 5,
     description:
-      "Sensores Capacitivos ñlkdñalskdñalksdñlaks ldjasdjlasjdlas jaskdjalsjdlasjd aksdkañskdñalsa aksdñkasñdlksañdl",
+      "Son sensores semejantes a los de proximidad inductivos, no obstante, su diferencia radica exactamente en el principio de funcionamiento, el cual se basa en el cambio de la capacitancia de la placa detectora localizada en la región denominada cara sensible.",
     category: "sensores",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430010/foc364fsakkzmausrovn.jpg",
+    img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689022742/SensoresCapacitivos_zgrmwf.webp",
   },
   {
     id: 3,
@@ -25,9 +25,9 @@ export const products = [
     price: 19000,
     stock: 1,
     description:
-      "Sensores Opticos ñlkdñalskdñalksdñlaks ldjasdjlasjdlas jaskdjalsjdlasjd aksdkañskdñalsa aksdñkasñdlksañdl",
+      "Los sensores fotoeléctricos de reflexión difusa son un tipo de sensor óptico que se utilizan comúnmente en aplicaciones de automatización industrial. Tienen un emisor de luz y un receptor integrados. Estos sensores detectan la luz emitida que rebota en un objeto y, por lo tanto, determinan si un objeto está presente.",
     category: "sensores",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430165/images_lujpmr.jpg",
+    img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689022752/Diffuse-Photoelectric-Sensors-01-768x384_zsrhjx.jpg",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const products = [
     description:
       "PLC Fatek Serie Basica FBs-Ma ñlkdñalskdñalksdñlaks ldjasdjlasjdlas jaskdjalsjdlasjd aksdkañskdñalsa aksdñkasñdlksañdl",
     category: "plc",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430220/rtokwmt3j03bblbfhwhb.jpg",
+    img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689025221/fatekBasico_owcorf.jpg",
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const products = [
     description:
       "Serie de altas prestaciones FBs-MC ñlkdñalskdñalksdñlaks ldjasdjlasjdlas jaskdjalsjdlasjd aksdkañskdñalsa aksdñkasñdlksañdl",
     category: "plc",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430220/rtokwmt3j03bblbfhwhb.jpg",
+    img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689025220/fatekAdvanced_l5ndre.jpg",
   },
   {
     id: 6,
@@ -55,9 +55,9 @@ export const products = [
     price: 17800,
     stock: 5,
     description:
-      "PLC Siemens Serie S7 ñlkdñalskdñalksdñlaks ldjasdjlasjdlas jaskdjalsjdlasjd aksdkañskdñalsa aksdñkasñdlksañdl aksdkañskdñalsa aksdñkasñdlksañdl ",
+      "Los Controladores SIMATIC de Siemens le proporcionan soluciones de automatización en todos los niveles de rendimiento, con funcionalidad consistente e interfaces estandarizadas, perfectamente optimizado para aplicaciones tanto simples como complejas.",
     category: "plc",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430220/rtokwmt3j03bblbfhwhb.jpg",
+    img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689025760/siemens_qjbine.png",
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ export const products = [
     description:
       "HMI Fatek ñlkdñalskdñalksdñlaks ldjasdjlasjdlas jaskdjalsjdlasjd aksdkañskdñalsa aksdñkasñdlksañdl",
     category: "hmi",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430220/rtokwmt3j03bblbfhwhb.jpg",
+    img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689026582/HMI_FATEK_rq0vwa.png",
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ export const products = [
     description:
       "HMI Weintek ñlkdñalskdñalksdñlaks ldjasdjlasjdlas jaskdjalsjdlasjd aksdkañskdñalsa aksdñkasñdlksañdl",
     category: "hmi",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430220/rtokwmt3j03bblbfhwhb.jpg",
+    img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689026679/weintek_rxbwvf.webp",
   },
   {
     id: 9,
@@ -87,6 +87,6 @@ export const products = [
     description:
       "HMI Siemens ñlkdñalskdñalksdñlaks ldjasdjlasjdlas jaskdjalsjdlasjd aksdkañskdñalsa aksdñkasñdlksañdl",
     category: "hmi",
-    img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430220/rtokwmt3j03bblbfhwhb.jpg",
+    img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689026600/hmisiemens_cn7lkr.jpg",
   },
 ];

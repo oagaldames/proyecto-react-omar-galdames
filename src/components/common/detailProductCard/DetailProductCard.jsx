@@ -4,12 +4,13 @@ import CounterContainer from "../counter/CounterContainer";
 
 const DetailProductCard = ({ item, agregarAlCarrito }) => {
   return (
-    <Card sx={{ width: "calc(50%)" }}>
+    <Card sx={{ width: "calc(60%)" }}>
       <Grid container spacing={2}>
         <Grid item xs={4}>
           <CardMedia
             sx={{
-              height: 100,
+              height: 162,
+              width: 300,
               marginTop: 12,
               display: "flex",
               alignItems: "center",

@@ -4,13 +4,7 @@ import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContain
 import Navbar from "./components/layout/navbar/Navbar";
 
 function App() {
-  const mensaje = "BIENVENIDO A NUESTRA TIENDA ONLINE";
-
   return (
-    // <div>
-    //   <Navbar />
-    //   <ItemListContainer greeting={mensaje} />
-    // </div>
     <BrowserRouter>
       <Routes>
         <Route element={<Navbar />}>
