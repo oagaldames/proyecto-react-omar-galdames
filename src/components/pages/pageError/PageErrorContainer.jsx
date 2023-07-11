@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 
-const PageError = () => {
+const PageErrorContainer = () => {
   return (
     <div>
       <Box
@@ -24,4 +24,4 @@ const PageError = () => {
   );
 };
 
-export default PageError;
+export default PageErrorContainer;
