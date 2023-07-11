@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemListContainer from "./components/pages/itemList/ItemListContainer";
 import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer";
 import Navbar from "./components/layout/navbar/Navbar";
+import PageError from "./components/pages/pageError/PageError";
 
 function App() {
   return (
@@ -14,9 +15,8 @@ function App() {
             element={<ItemListContainer />}
           />
           <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
+          <Route path="*" element={<PageError />} />
         </Route>
-
-        <Route path="*" element={<h1>404 - Not found</h1>} />
       </Routes>
     </BrowserRouter>
   );

@@ -19,7 +19,6 @@ const ItemListContainer = () => {
 
     const tarea = new Promise((resolve, reject) => {
       resolve(categoryName ? productosFiltrados : products);
-      reject("salio todo mal");
     });
 
     tarea

@@ -6,23 +6,23 @@ const DetailProductCard = ({ item, agregarAlCarrito }) => {
   return (
     <Card sx={{ width: "calc(60%)" }}>
       <Grid container spacing={2}>
-        <Grid item xs={4}>
+        <Grid item xs={8}>
           <CardMedia
             sx={{
-              height: 162,
-              width: 300,
-              marginTop: 12,
+              height: 300,
+              width: 550,
+              marginTop: 5,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
             }}
             image={item.img}
-            title="green iguana"
+            title={item.title}
           />
         </Grid>
         <Grid
           item
-          xs={8}
+          xs={4}
           sx={{
             display: "flex",
             flexDirection: "column",

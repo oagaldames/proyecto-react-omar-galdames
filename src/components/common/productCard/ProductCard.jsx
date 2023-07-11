@@ -14,7 +14,7 @@ const ProductCard = ({ item }) => {
       <CardMedia
         sx={{ height: 200, width: "calc(90%)" }}
         image={item.img}
-        title="green iguana"
+        title={item.title}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div" align="center">

@@ -1,5 +1,3 @@
-// import CounterContainer from "../../common/Counter/CounterContainer";
-
 import { Box } from "@mui/material";
 import DetailProductCard from "../../common/detailProductCard/DetailProductCard";
 

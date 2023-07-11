@@ -22,7 +22,6 @@ const ItemDetailContainer = () => {
       ...product,
       quantity: cantidad,
     };
-    console.log(data);
   };
 
   return <ItemDetail product={product} agregarAlCarrito={agregarAlCarrito} />;
