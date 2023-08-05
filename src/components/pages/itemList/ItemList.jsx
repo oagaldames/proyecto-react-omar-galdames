@@ -2,18 +2,20 @@ import ProductCard from "../../common/productCard/ProductCard";
 import { Typography, Box } from "@mui/material";
 
 const ItemList = ({ items, pageTitle }) => {
-  console.log("titulo de pagina", pageTitle);
   return (
-    <section>
-      <Typography variant="h3" align="center">
-        {pageTitle}
-      </Typography>
+    <>
+      <Box paddingTop={10}>
+        <Typography variant="h4" align="center">
+          {pageTitle}
+        </Typography>
+      </Box>
       <Box
         width="100%"
+        height="100%"
         display="flex"
         justifyContent="space-evenly"
         flexWrap="wrap"
-        paddingTop={2}
+        paddingTop={5}
         gap={2}
       >
         {items.map((item) => (
@@ -24,7 +26,7 @@ const ItemList = ({ items, pageTitle }) => {
           />
         ))}
       </Box>
-    </section>
+    </>
   );
 };
 

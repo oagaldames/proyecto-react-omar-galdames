@@ -1,23 +1,13 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ItemListContainer from "./components/pages/itemList/ItemListContainer";
-import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer";
-import Navbar from "./components/layout/navbar/Navbar";
-import PageErrorContainer from "./components/pages/pageError/PageErrorContainer";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./router/AppRouter";
+import CartContextComponent from "./context/CartContext";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route element={<Navbar />}>
-          <Route path="/" element={<ItemListContainer />} />
-          <Route
-            path="/category/:categoryName"
-            element={<ItemListContainer />}
-          />
-          <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
-          <Route path="*" element={<PageErrorContainer />} />
-        </Route>
-      </Routes>
+      <CartContextComponent>
+        <AppRouter />
+      </CartContextComponent>
     </BrowserRouter>
   );
 }

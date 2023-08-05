@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { products } from "../../../productosMock";
 import ItemList from "./ItemList";
+import { db } from "../../../firebaseConfig";
+import { collection, getDocs, orderBy, query, where } from "firebase/firestore";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -10,21 +11,29 @@ const ItemListContainer = () => {
 
   let pageTitle = categoryName
     ? "Categoría " + categoryName.toUpperCase()
-    : "Todos los Productos ";
+    : "Todos los Productos de la Tienda ";
 
   useEffect(() => {
-    let productosFiltrados = products.filter(
-      (elemento) => elemento.category === categoryName
-    );
+    let consulta;
+    let productsCollection = collection(db, "products");
 
-    const tarea = new Promise((resolve, reject) => {
-      resolve(categoryName ? productosFiltrados : products);
-    });
+    if (!categoryName) {
+      consulta = query(productsCollection, orderBy("category", "desc"));
+    } else {
+      consulta = query(
+        productsCollection,
+        where("category", "==", categoryName)
+      );
+    }
 
-    tarea
-      .then((respuesta) => setItems(respuesta))
-      .catch((error) => console.log(error))
-      .finally(() => console.log("hola"));
+    getDocs(consulta)
+      .then((result) => {
+        let arrProducts = result.docs.map((product) => {
+          return { ...product.data(), id: product.id };
+        });
+        setItems(arrProducts);
+      })
+      .catch((error) => console.log(error));
   }, [categoryName]);
 
   return <ItemList items={items} pageTitle={pageTitle} />;

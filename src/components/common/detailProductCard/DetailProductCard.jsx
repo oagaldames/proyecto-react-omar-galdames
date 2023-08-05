@@ -2,9 +2,9 @@ import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import CounterContainer from "../counter/CounterContainer";
 
-const DetailProductCard = ({ item, agregarAlCarrito }) => {
+const DetailProductCard = ({ item, agregarAlCarrito, cantidadEnCarrito }) => {
   return (
-    <Card sx={{ width: "calc(60%)" }}>
+    <Card sx={{ width: "calc(60%)", marginTop: "80px" }}>
       <Grid container spacing={2}>
         <Grid item xs={8}>
           <CardMedia
@@ -51,6 +51,7 @@ const DetailProductCard = ({ item, agregarAlCarrito }) => {
             </Typography>
 
             <CounterContainer
+              cantidadEnCarrito={cantidadEnCarrito}
               stock={item.stock}
               agregarAlCarrito={agregarAlCarrito}
             />

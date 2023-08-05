@@ -1,6 +1,5 @@
 export const products = [
   {
-    id: 1,
     title: "Sensor Inductivo",
     price: 11000,
     stock: 14,
@@ -10,7 +9,6 @@ export const products = [
     img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689024003/SensorInductivo_q7ehxk.webp",
   },
   {
-    id: 2,
     title: "Sensor Capacitivo",
     price: 14500,
     stock: 15,
@@ -21,7 +19,6 @@ export const products = [
     img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689022742/SensoresCapacitivos_zgrmwf.webp",
   },
   {
-    id: 3,
     title: "Sensor Optico",
     price: 17800,
     stock: 7,
@@ -32,7 +29,6 @@ export const products = [
     img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689022752/Diffuse-Photoelectric-Sensors-01-768x384_zsrhjx.jpg",
   },
   {
-    id: 4,
     title: "Fatek Serie Basica",
     price: 37800,
     stock: 8,
@@ -43,7 +39,6 @@ export const products = [
     img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689025221/fatekBasico_owcorf.jpg",
   },
   {
-    id: 5,
     title: "Fatek Serie Altas Prestaciones",
     price: 57800,
     stock: 3,
@@ -54,7 +49,6 @@ export const products = [
     img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689025220/fatekAdvanced_l5ndre.jpg",
   },
   {
-    id: 6,
     title: "Siemens",
     price: 98000,
     stock: 2,
@@ -65,7 +59,6 @@ export const products = [
     img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689025760/siemens_qjbine.png",
   },
   {
-    id: 7,
     title: "HMI Fatek",
     price: 127400,
     stock: 4,
@@ -76,7 +69,6 @@ export const products = [
     img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689083893/hmifatek_wdc6mn.png",
   },
   {
-    id: 8,
     title: "HMI Weintek",
     price: 140400,
     stock: 6,
@@ -88,7 +80,6 @@ export const products = [
     img: "https://res.cloudinary.com/dlpr5h9qz/image/upload/v1689026679/weintek_rxbwvf.webp",
   },
   {
-    id: 9,
     title: "HMI Siemens",
     price: 250100,
     stock: 6,

@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import DetailProductCard from "../../common/detailProductCard/DetailProductCard";
 
-const ItemDetail = ({ product }) => {
+const ItemDetail = ({ product, agregarAlCarrito, cantidadEnCarrito }) => {
   return (
     <div>
       <Box
@@ -15,6 +15,8 @@ const ItemDetail = ({ product }) => {
         <DetailProductCard
           key={product.id}
           item={product}
+          agregarAlCarrito={agregarAlCarrito}
+          cantidadEnCarrito={cantidadEnCarrito}
           style={{ flexBasis: "calc(33.33% - 20px)" }}
         />
       </Box>

@@ -46,6 +46,7 @@ const Counter = ({ counter, setCounter, agregarAlCarrito, stock }) => {
         }}
       >
         <Button
+          disabled={stock == 0}
           variant="contained"
           color="secondary"
           onClick={() => agregarAlCarrito(counter)}
