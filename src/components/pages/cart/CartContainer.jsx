@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 import Swal from "sweetalert2";
 import { Box, Button, Typography } from "@mui/material";
@@ -96,6 +96,7 @@ const CartContainer = () => {
               justifyContent="center"
               alignItems="center"
               height="100%"
+              paddingTop={5}
             >
               <Button
                 size="medium"
@@ -119,9 +120,14 @@ const CartContainer = () => {
           </>
         )}
         {cart.length == 0 && (
-          <Box display="flex" justifyContent="center" alignItems="center">
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            paddingTop={10}
+          >
             <Link to="/" style={{ textDecoration: "none" }}>
-              <Button size="small" variant="contained">
+              <Button size="large" variant="contained">
                 Descubrir Productos
               </Button>
             </Link>

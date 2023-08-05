@@ -1,12 +1,13 @@
 import { useContext, useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { CartContext } from "../../../context/CartContext";
-//import Swal from "sweetalert2";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { collection, doc, getDoc } from "firebase/firestore";
 import { db } from "../../../firebaseConfig";
+import { Box, Button, Typography } from "@mui/material";
+import Spinner from "../../common/Spinner/Spinner";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
@@ -24,15 +25,18 @@ const ItemDetailContainer = () => {
       .then((resp) => {
         if (resp.exists()) {
           setProduct({ ...resp.data(), id: resp.id });
+          console.log(product.id);
         } else {
           setProduct({});
+          console.log(product.id);
         }
       })
       .catch((error) => {
-        console.error("Error al obtener el documento: ", error);
+        console.log("Error al obtener el documento: ", error);
       })
       .finally(() => {
         setLoading(false);
+        console.log(product.id);
       });
   }, [id]);
 
@@ -55,9 +59,9 @@ const ItemDetailContainer = () => {
   };
   if (loading) {
     return (
-      <div>
-        <h1>CARGANDO PRODUCTO...</h1>
-      </div>
+      <Box paddingTop={10}>
+        <Spinner />
+      </Box>
     );
   }
   return product.id !== undefined ? (
@@ -70,9 +74,22 @@ const ItemDetailContainer = () => {
       <ToastContainer />
     </>
   ) : (
-    <div>
-      <h1>PRODUCTO NO EXISTE</h1>
-    </div>
+    <Box
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      paddingTop={10}
+      flexDirection="column"
+    >
+      <Typography variant="h3" textAlign="center" marginBottom={5}>
+        El producto no Existe !
+      </Typography>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <Button size="large" variant="contained">
+          Ir a pagina principal
+        </Button>
+      </Link>
+    </Box>
   );
 };
 

@@ -25,7 +25,7 @@ const Footer = () => {
       left={0}
       right={0}
     >
-      <Typography variant="caption" sx={{ marginLeft: "30%" }}>
+      <Typography variant="caption">
         Proyecto Ecommerce React JS - Omar Adrián Galdames
       </Typography>
 

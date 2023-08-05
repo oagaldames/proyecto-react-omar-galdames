@@ -1,4 +1,4 @@
-import { Button, TextField } from "@mui/material";
+import { Button, TextField, Box, Grid, Typography, Card } from "@mui/material";
 import { useFormik } from "formik";
 import { useContext, useState } from "react";
 import * as Yup from "yup";
@@ -81,62 +81,105 @@ const CheckoutContainer = () => {
   });
 
   return (
-    <div style={{ padding: "40px" }}>
-      {!orderId ? (
-        <form onSubmit={handleSubmit}>
-          <TextField
-            label="Nombre"
-            variant="outlined"
-            name="name"
-            onChange={handleChange}
-            error={errors.name ? true : false}
-            helperText={errors.name}
-          />
-          <TextField
-            label="Apellido"
-            variant="outlined"
-            name="lastName"
-            onChange={handleChange}
-            error={errors.lastName ? true : false}
-            helperText={errors.lastName}
-          />
-          <TextField
-            label="Telefono"
-            variant="outlined"
-            name="phone"
-            onChange={handleChange}
-            error={errors.phone ? true : false}
-            helperText={errors.phone}
-          />
-          <TextField
-            type="text"
-            label="Email"
-            variant="outlined"
-            name="email"
-            onChange={handleChange}
-            error={errors.email ? true : false}
-            helperText={errors.email}
-          />
-          <TextField
-            type="text"
-            label="Email"
-            variant="outlined"
-            name="chkEmail"
-            onChange={handleChange}
-            error={errors.chkEmail ? true : false}
-            helperText={errors.chkEmail}
-          />
-
-          <Button type="submit" variant="contained">
-            Generar Orden
-          </Button>
-        </form>
-      ) : (
-        <>
-          <CompraTerminadaContainer orderId={orderId} />
-        </>
-      )}
-    </div>
+    <>
+      <Box
+        display="flex"
+        justifyContent="center"
+        paddingTop={10}
+        minHeight="100vh"
+        marginBottom="10px"
+      >
+        <Box>
+          {!orderId ? (
+            <>
+              <Box
+                display="flex"
+                justifyContent="center"
+                flexDirection="column"
+                paddingBottom={2}
+              >
+                <Typography variant="h5" textAlign="center">
+                  CheckOut
+                </Typography>
+                <Typography variant="caption" textAlign="center">
+                  Ingrese sus datos para poder generar la orden de compra
+                </Typography>
+              </Box>
+              <form onSubmit={handleSubmit}>
+                <Grid
+                  container
+                  spacing={2}
+                  alignItems="center"
+                  justifyContent="center"
+                >
+                  <Grid item xs={12} textAlign="center">
+                    <TextField
+                      label="Nombre"
+                      variant="outlined"
+                      name="name"
+                      onChange={handleChange}
+                      error={errors.name ? true : false}
+                      helperText={errors.name}
+                    />
+                  </Grid>
+                  <Grid item xs={12} textAlign="center">
+                    <TextField
+                      label="Apellido"
+                      variant="outlined"
+                      name="lastName"
+                      onChange={handleChange}
+                      error={errors.lastName ? true : false}
+                      helperText={errors.lastName}
+                    />
+                  </Grid>
+                  <Grid item xs={12} textAlign="center">
+                    <TextField
+                      label="Telefono"
+                      variant="outlined"
+                      name="phone"
+                      onChange={handleChange}
+                      error={errors.phone ? true : false}
+                      helperText={errors.phone}
+                    />
+                  </Grid>
+                  <Grid item xs={12} textAlign="center">
+                    <TextField
+                      type="text"
+                      label="Email"
+                      variant="outlined"
+                      name="email"
+                      onChange={handleChange}
+                      error={errors.email ? true : false}
+                      helperText={errors.email}
+                    />
+                  </Grid>
+                  <Grid item xs={12} textAlign="center">
+                    <TextField
+                      type="text"
+                      label="Email"
+                      variant="outlined"
+                      name="chkEmail"
+                      onChange={handleChange}
+                      error={errors.chkEmail ? true : false}
+                      helperText={errors.chkEmail}
+                    />
+                  </Grid>
+                  <Grid item xs={12} textAlign="center">
+                    <Button type="submit" variant="contained">
+                      Generar Orden
+                    </Button>
+                  </Grid>
+                </Grid>
+              </form>
+            </>
+          ) : (
+            <>
+              <CompraTerminadaContainer orderId={orderId} />
+            </>
+          )}
+        </Box>
+      </Box>
+    </>
   );
 };
 

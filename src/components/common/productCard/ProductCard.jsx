@@ -20,9 +20,6 @@ const ProductCard = ({ item }) => {
         <Typography gutterBottom variant="h5" component="div" align="center">
           {item.title}
         </Typography>
-        {/* <Typography variant="body2" color="text.secondary" align="center">
-          {item.description}
-        </Typography> */}
       </CardContent>
       <CardActions sx={{ display: "flex", justifyContent: "center" }}>
         <Link to={`/itemDetail/${item.id}`}>
