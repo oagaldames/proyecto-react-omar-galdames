@@ -9,6 +9,7 @@
 Este repositorio contiene el proyecto desarrollado durante el curso de `React JS` de `Coderhouse`.
 
 La aplicacion consiste en un ecommerce, desde el cual se puede navegar entre categorias de productos, ver el detalle de cada producto, agregar al carrito de compras, visualizar el carrito de compras desde donde se puede eliminar un item o eliminar todos los items.
+Los datos del Carrito de compra son preservados en el localStorage para evitar perderlo si se sale de la aplicacion.
 Desde el carrito si puede terminar la compra , ingresando a la pagina de Checkout donde se visualiza un resumen del pedido y se deben ingresar en forma obligatoria el nombre, apellido , telefono, email y verificar el email, si todos los campos pasan las validaciones se precede a generar una nueva orden de pedido , finalizado este proceso se visualizara el id de la misma y con un boton se puede realizar la copia al portapapeles.
 
 Los productos y las ordenes generadas se almacenan en `Firebase`
