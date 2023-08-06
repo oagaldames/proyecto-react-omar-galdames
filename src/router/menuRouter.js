@@ -1,8 +1,7 @@
 import ItemListContainer from "../components/pages/itemList/ItemListContainer";
 import ItemDetailContainer from "../components/pages/itemDetail/ItemDetailContainer";
-import CartContainer from "../components/pages/cart/CartCOntainer";
+import CartContainer from "../components/pages/cart/CartContainer";
 import CheckoutContainer from "../components/pages/checkout/CheckOutContainer";
-import Dashboard from "../components/pages/dashboard/Dashboard";
 
 export const routes = [
   {
