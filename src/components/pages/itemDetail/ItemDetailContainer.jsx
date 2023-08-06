@@ -25,10 +25,8 @@ const ItemDetailContainer = () => {
       .then((resp) => {
         if (resp.exists()) {
           setProduct({ ...resp.data(), id: resp.id });
-          console.log(product.id);
         } else {
           setProduct({});
-          console.log(product.id);
         }
       })
       .catch((error) => {
@@ -36,7 +34,6 @@ const ItemDetailContainer = () => {
       })
       .finally(() => {
         setLoading(false);
-        console.log(product.id);
       });
   }, [id]);
 
@@ -60,7 +57,7 @@ const ItemDetailContainer = () => {
   if (loading) {
     return (
       <Box paddingTop={10}>
-        <Spinner />
+        <Spinner msgSpinner={"Cargando Datos...."} />
       </Box>
     );
   }

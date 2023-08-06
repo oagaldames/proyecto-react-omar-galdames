@@ -1,6 +1,6 @@
 import { Box, CircularProgress, Typography } from "@mui/material";
 
-const Spinner = () => {
+const Spinner = ({ msgSpinner }) => {
   return (
     <Box
       display="flex"
@@ -10,7 +10,8 @@ const Spinner = () => {
     >
       <CircularProgress color="primary" size={40} />
       <Typography variant="h5" textAlign="center" marginTop={2}>
-        Cargando Datos....
+        {msgSpinner}
+        {/* Cargando Datos.... */}
       </Typography>
     </Box>
   );

@@ -3,7 +3,7 @@ import { CartContext } from "../../../context/CartContext";
 import Swal from "sweetalert2";
 import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import ItemCart from "../../common/ItemCart";
+import ItemCart from "../../common/itemCart/ItemCart";
 
 const CartContainer = () => {
   const { cart, clearCart, deleteById, getTotalPrice, getTotalQuantity } =

@@ -2,4 +2,4 @@
 
 ## Alumno: OMAR GALDAMES
 
-### PROYECTO FINAL
+### Proyecto E-commerce React JS

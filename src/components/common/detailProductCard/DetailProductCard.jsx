@@ -1,4 +1,12 @@
-import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Grid,
+  Typography,
+  useMediaQuery,
+  Box,
+} from "@mui/material";
 import CounterContainer from "../counter/CounterContainer";
 
 const DetailProductCard = ({ item, agregarAlCarrito, cantidadEnCarrito }) => {

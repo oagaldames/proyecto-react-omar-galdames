@@ -20,13 +20,13 @@ const Footer = () => {
       height={50}
       width="100%"
       marginTop={10}
-      position="fixed"
+      // position="fixed"
       bottom={0}
       left={0}
       right={0}
     >
       <Typography variant="caption">
-        Proyecto Ecommerce React JS - Omar Adrián Galdames
+        Proyecto E-commerce React JS - Omar Adrián Galdames
       </Typography>
 
       <IconButton onClick={() => handleClic("linkedin")}>
