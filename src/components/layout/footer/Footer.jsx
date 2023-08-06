@@ -20,9 +20,6 @@ const Footer = () => {
       height={50}
       width="100%"
       marginTop={10}
-      bottom={0}
-      left={0}
-      right={0}
     >
       <Typography variant="caption">
         Proyecto E-commerce React JS - Omar Adrián Galdames
