@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-
 import { routes } from "./menuRouter";
 import Layout from "../components/layout/Layout";
 import PageErrorContainer from "../components/pages/pageError/PageErrorContainer";

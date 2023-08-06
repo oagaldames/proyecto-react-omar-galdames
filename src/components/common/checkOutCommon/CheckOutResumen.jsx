@@ -9,7 +9,6 @@ import {
   Box,
   CardMedia,
 } from "@mui/material";
-import DeleteIcon from "@mui/icons-material/Delete";
 
 const CheckOutResumen = ({ elemento }) => {
   return (

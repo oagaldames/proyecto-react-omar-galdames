@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Typography, Box, Button } from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { CopyToClipboard } from "react-copy-to-clipboard";

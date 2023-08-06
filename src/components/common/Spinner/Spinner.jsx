@@ -11,7 +11,6 @@ const Spinner = ({ msgSpinner }) => {
       <CircularProgress color="primary" size={40} />
       <Typography variant="h5" textAlign="center" marginTop={2}>
         {msgSpinner}
-        {/* Cargando Datos.... */}
       </Typography>
     </Box>
   );

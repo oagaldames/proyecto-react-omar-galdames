@@ -4,7 +4,6 @@ import {
   Box,
   Grid,
   Typography,
-  Card,
   Container,
 } from "@mui/material";
 import { useFormik } from "formik";
@@ -164,7 +163,6 @@ const CheckoutContainer = () => {
                     <Typography variant="caption" textAlign="center">
                       Ingrese sus datos para poder generar la orden de compra
                     </Typography>
-                    {/* </Box> */}
                     <form onSubmit={handleSubmit}>
                       <Grid
                         container
