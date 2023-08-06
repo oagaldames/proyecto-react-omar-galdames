@@ -6,7 +6,7 @@ import { Link, Outlet } from "react-router-dom";
 import { Tooltip } from "@mui/material";
 
 const Navbar = () => {
-  let userRol = "admin";
+  let userRol = "admi";
   return (
     <div>
       <Box
@@ -43,7 +43,7 @@ const Navbar = () => {
         </Link>
 
         <Typography variant="h5" sx={{ marginLeft: "30px" }}>
-          TIENDA ON LINE
+          Tienda On-Line
         </Typography>
         <Box
           component="ul"
@@ -52,7 +52,7 @@ const Navbar = () => {
           <li sx={{ marginRight: "30px" }}>
             <Tooltip title="Ver Categoría Sensores">
               <Button component={Link} to="/category/sensores" color="inherit">
-                <Typography variant="button">SENSORES</Typography>
+                <Typography variant="button">Sensores</Typography>
               </Button>
             </Tooltip>
           </li>
@@ -67,13 +67,17 @@ const Navbar = () => {
           <li sx={{ marginRight: "30px" }}>
             <Tooltip title="Ver Categoría HMI">
               <Button component={Link} to="/category/hmi" color="inherit">
-                <Typography variant="button">HMI</Typography>
+                <Typography variant="button">Hmi</Typography>
               </Button>
             </Tooltip>
           </li>
-          <Button component={Link} to="/dashboard" color="inherit">
-            <Typography variant="button">ADMIN</Typography>
-          </Button>
+          <li sx={{ marginRight: "30px" }}>
+            {userRol === "admin" && (
+              <Button component={Link} to="/dashboard" color="inherit">
+                <Typography variant="button">Admin</Typography>
+              </Button>
+            )}
+          </li>
         </Box>
         <CartWidget />
       </Box>

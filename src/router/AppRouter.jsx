@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import { routes } from "./menuRouter";
 import Layout from "../components/layout/Layout";
 import PageErrorContainer from "../components/pages/pageError/PageErrorContainer";
+import ProtectedRoutes from "./ProtectedRouter";
+import Dashboard from "../components/pages/dashboard/Dashboard";
 
 const AppRouter = () => {
   return (
@@ -13,6 +15,10 @@ const AppRouter = () => {
         ))}
       </Route>
       <Route path="*" element={<PageErrorContainer />} />
+
+      <Route element={<ProtectedRoutes />}>
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Route>
     </Routes>
   );
 };

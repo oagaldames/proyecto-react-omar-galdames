@@ -21,7 +21,6 @@ import {
 import { db } from "../../../firebaseConfig";
 import CompraTerminadaContainer from "../../common/checkOutCommon/CheckOutForm";
 import Spinner from "../../common/Spinner/Spinner";
-import ItemCart from "../../common/itemCart/ItemCart";
 import CheckOutResumen from "../../common/checkOutCommon/CheckOutResumen";
 
 const CheckoutContainer = () => {
@@ -150,8 +149,6 @@ const CheckoutContainer = () => {
                   maxWidth="90vh"
                   padding={2}
                 >
-                  {/* {!orderId ? (
-                  <> */}
                   <Box
                     display="flex"
                     justifyContent="center"
@@ -235,12 +232,6 @@ const CheckoutContainer = () => {
                       </Grid>
                     </form>
                   </Box>
-                  {/* </> */}
-                  {/* ) : (
-                  <>
-                    <CompraTerminadaContainer orderId={orderId} />
-                  </>
-                )} */}
                 </Box>
               </Box>
             </Grid>

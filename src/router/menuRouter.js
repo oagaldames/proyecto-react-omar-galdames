@@ -3,7 +3,7 @@ import ItemDetailContainer from "../components/pages/itemDetail/ItemDetailContai
 import CartContainer from "../components/pages/cart/CartCOntainer";
 import CheckoutContainer from "../components/pages/checkout/CheckOutContainer";
 import Dashboard from "../components/pages/dashboard/Dashboard";
-// import FormFormik from "../components/pages/formFormik/FormFormik";
+
 export const routes = [
   {
     id: "home",
@@ -30,14 +30,4 @@ export const routes = [
     path: "/checkout",
     Element: CheckoutContainer,
   },
-  {
-    id: "dashboard",
-    path: "/dashboard",
-    Element: Dashboard,
-  },
-  //   {
-  //     id: "formik",
-  //     path: "/formik",
-  //     Element: FormFormik,
-  //   }
 ];

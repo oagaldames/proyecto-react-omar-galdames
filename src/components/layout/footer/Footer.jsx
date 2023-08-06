@@ -20,7 +20,7 @@ const Footer = () => {
       height={50}
       width="100%"
       marginTop={10}
-      // position="fixed"
+      position="fixed"
       bottom={0}
       left={0}
       right={0}
