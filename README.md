@@ -15,7 +15,7 @@ Los productos y las ordenes generadas se almacenan en `Firebase`
 
 Puede visitarse el deploy del proyecto en [https://proyecto-react-omar-galdames.vercel.app/)
 
-![GIF de muestra.](/ProyectoFinal.gif.gif "Vista del proyecto.")
+![GIF de muestra.](/ProyectoFinal.gif.gif")
 
 ### Tecnologías utilizadas
 
